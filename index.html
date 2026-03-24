@@ -6,13 +6,11 @@
     <meta name="description" content="Yui's Real Estate — Trusted realtor serving California and Arizona. Buy, sell, or invest with personalized guidance. Contact Yui today.">
     <title>Yui's Real Estate | California & Arizona Luxury Homes</title>
 
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="Yui's Real Estate | CA & AZ">
     <meta property="og:description" content="Professional, warm, results-driven real estate services across California and Arizona.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -190,13 +188,14 @@
         .contact-section { background: var(--sand); }
         .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
         
-        /* Calculator */
-        .calc-sidebar { background: var(--navy); padding: 40px; color: var(--white); border-radius: 4px; border-left: 5px solid var(--gold); }
-        .calc-input-group { margin-bottom: 20px; }
-        .calc-input-group label { display: block; font-size: 0.7rem; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
-        .calc-input-group input { width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 12px; color: white; outline: none; }
-        .calc-result { margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
-        .payment-val { font-family: var(--heading-font); font-size: 2.2rem; color: var(--gold); }
+        /* New Mortgage Calculator Styling */
+        .calculator-card { background: var(--navy); padding: 32px; color: var(--white); border-radius: 4px; border-left: 4px solid var(--gold); }
+        .calc-input { margin-bottom: 16px; }
+        .calc-input label { display: block; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 4px; color: var(--gold); }
+        .calc-input input { width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 10px; color: white; outline: none; }
+        .calc-result { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .calc-result span { font-size: 0.8rem; opacity: 0.8; }
+        .payment-amount { font-family: var(--heading-font); font-size: 2rem; color: var(--gold); margin-top: 8px; }
 
         /* Form */
         .contact-form-wrap { background: var(--white); padding: 50px; border-radius: 4px; }
@@ -232,7 +231,6 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <nav id="navbar">
         <div class="container nav-content">
             <a href="#" class="logo">YUI'S</a>
@@ -249,7 +247,6 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="hero">
         <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80" alt="Luxury Home Background" class="hero-bg">
         <div class="hero-content">
@@ -263,7 +260,6 @@
         </div>
     </section>
 
-    <!-- TRUST BAR -->
     <div class="trust-bar">
         <div class="container">
             <div class="stats-grid">
@@ -287,7 +283,6 @@
         </div>
     </div>
 
-    <!-- LISTINGS WITH FILTER -->
     <section class="listings-section" id="listings">
         <div class="container">
             <div class="filter-bar fade-up">
@@ -305,7 +300,6 @@
             </div>
 
             <div class="listings-grid">
-                <!-- Card 1 -->
                 <div class="listing-card fade-up" data-state="ca" data-range="over-1m">
                     <div class="listing-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');"></div>
                     <div class="listing-info">
@@ -314,7 +308,6 @@
                         <p class="listing-details">5 Beds | 4 Baths | 4,200 sqft</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="listing-card fade-up" data-state="az" data-range="over-1m">
                     <div class="listing-img" style="background-image: url('https://images.unsplash.com/photo-1580587767513-39981f3464ff?auto=format&fit=crop&w=800&q=80');"></div>
                     <div class="listing-info">
@@ -323,7 +316,6 @@
                         <p class="listing-details">4 Beds | 3 Baths | 3,500 sqft</p>
                     </div>
                 </div>
-                <!-- Card 3 -->
                 <div class="listing-card fade-up" data-state="ca" data-range="under-1m">
                     <div class="listing-img" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80');"></div>
                     <div class="listing-info">
@@ -336,7 +328,6 @@
         </div>
     </section>
 
-    <!-- ABOUT YUI -->
     <section class="about" id="about">
         <div class="container about-grid">
             <div class="about-image fade-up">
@@ -352,7 +343,6 @@
         </div>
     </section>
 
-    <!-- MARKETS -->
     <section class="markets" id="markets">
         <div class="container">
             <div class="markets-grid">
@@ -378,11 +368,10 @@
         </div>
     </section>
 
-    <!-- SERVICE MAP -->
     <section class="map-section">
         <div class="container map-grid">
             <div class="map-frame fade-up">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3403362.4841968855!2d-116.14238535!3d33.8821013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105743.08502353106!2d-118.5262703!3d34.020479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d33dc2a53d%3A0x2a2a0e417a8e8e!2sSanta%20Monica%2C%20CA!5e0!3m2!1sen!2sus!4v1711234567890!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="area-lists fade-up">
                 <h3 style="margin-bottom:20px;">Primary Areas</h3>
@@ -400,7 +389,6 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 style="margin-bottom: 50px;">Client Stories</h2>
@@ -419,28 +407,31 @@
         </div>
     </section>
 
-    <!-- CONTACT & CALCULATOR -->
     <section class="contact-section" id="contact">
         <div class="container contact-grid">
-            <!-- Sidebar with Calc -->
+            
             <div class="contact-sidebar fade-up">
-                <div class="calc-sidebar">
-                    <h4 style="color:var(--gold); margin-bottom:20px; font-family:var(--heading-font);">Mortgage Estimator</h4>
-                    <div class="calc-input-group">
-                        <label>Home Price ($)</label>
-                        <input type="number" id="cPrice" value="750000">
+                <div class="calculator-card">
+                    <div class="calc-header">
+                        <h4 style="font-family: var(--heading-font); color: var(--gold);">Mortgage Estimator</h4>
                     </div>
-                    <div class="calc-input-group">
-                        <label>Down Payment (%)</label>
-                        <input type="number" id="cDown" value="20">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>Interest Rate (%)</label>
-                        <input type="number" id="cRate" value="6.5" step="0.1">
-                    </div>
-                    <div class="calc-result">
-                        <span style="font-size:0.8rem; opacity:0.7;">Monthly Payment Est.</span>
-                        <div class="payment-val" id="paymentOutput">$0</div>
+                    <div class="calc-body">
+                        <div class="calc-input">
+                            <label>Home Price ($)</label>
+                            <input type="number" id="calc-price" value="750000">
+                        </div>
+                        <div class="calc-input">
+                            <label>Down Payment (%)</label>
+                            <input type="number" id="calc-down" value="20">
+                        </div>
+                        <div class="calc-input">
+                            <label>Interest Rate (%)</label>
+                            <input type="number" id="calc-rate" value="6.5" step="0.1">
+                        </div>
+                        <div class="calc-result">
+                            <span>Estimated Monthly Payment:</span>
+                            <div id="monthly-payment" class="payment-amount">$0</div>
+                        </div>
                     </div>
                 </div>
                 <div style="margin-top:30px;">
@@ -449,7 +440,6 @@
                 </div>
             </div>
 
-            <!-- Lead Form -->
             <div class="contact-form-wrap fade-up">
                 <h2 style="margin-bottom:30px;">Start Your Journey</h2>
                 <form id="leadForm">
@@ -479,7 +469,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -500,15 +489,13 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                &copy; 2024 Yui's Real Estate. All rights reserved. | Luxury Real Estate CA & AZ.
+                © 2024 Yui's Real Estate. All rights reserved. | Luxury Real Estate CA & AZ.
             </div>
         </div>
     </footer>
 
-    <!-- SCROLL TO TOP -->
     <div id="scrollTop">↑</div>
 
-    <!-- JAVASCRIPT -->
     <script>
         // 1. Navigation State
         const nav = document.getElementById('navbar');
@@ -561,11 +548,11 @@
             });
         });
 
-        // 5. Mortgage Calculator
-        const pInp = document.getElementById('cPrice');
-        const dInp = document.getElementById('cDown');
-        const rInp = document.getElementById('cRate');
-        const output = document.getElementById('paymentOutput');
+        // 5. Updated Mortgage Calculator Script
+        const pInp = document.getElementById('calc-price');
+        const dInp = document.getElementById('calc-down');
+        const rInp = document.getElementById('calc-rate');
+        const output = document.getElementById('monthly-payment');
 
         function updateCalc() {
             const P = pInp.value * (1 - (dInp.value / 100));
@@ -574,10 +561,12 @@
             if (P > 0 && r > 0) {
                 const monthly = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
                 output.innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(monthly);
+            } else {
+                output.innerText = "$0.00";
             }
         }
         [pInp, dInp, rInp].forEach(el => el.addEventListener('input', updateCalc));
-        updateCalc();
+        updateCalc(); // Initialize on load
 
         // 6. Form Submission (Mailto)
         document.getElementById('leadForm').addEventListener('submit', (e) => {
